@@ -1,0 +1,17 @@
+name: listing files
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: ls output
+          run: |
+             ls 
+        
+      
