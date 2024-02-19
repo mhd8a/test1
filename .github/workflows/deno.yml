@@ -10,6 +10,8 @@ jobs:
     build:
       runs-on: ubuntu-latest
       steps:
+        - name: check my repository details
+          run: echo "{{ github.repository }}"
         - name: checkout the code
           uses: actions/checkout@v3
         - name: ls output
